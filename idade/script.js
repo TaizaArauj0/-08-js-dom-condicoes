@@ -21,7 +21,7 @@ function verificar() {
                 img.setAttribute('src', 'jovem.menino.png')
             } else if (idade < 50 ) {
                 // Adulto
-                img.setAttribute('src', 'adulto.menino.png')       
+                img.setAttribute('src', 'homem.adulto.png')       
             } else {
                 // Idoso
                 img.setAttribute('src', 'idoso.png')
@@ -36,14 +36,14 @@ function verificar() {
                 img.setAttribute('src', 'jovem.menina.png')
             } else if (idade < 50 ) {
                 // Adulta
-                img.setAttribute('src', 'adulta.menina.png')       
+                img.setAttribute('src', 'mulher.adulta.png')       
             } else {
                 // Idosa
                 img.setAttribute('src', 'idosa.png')
             }
         }   
         res.style.textAlign = "center"
-        res.innerHTML - `Detectamos ${gênero} com ${idade} anos.`
+        res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`
         res.appendChild(img)
     }
 }
